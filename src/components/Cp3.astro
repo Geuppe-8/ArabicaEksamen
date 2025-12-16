@@ -13,6 +13,8 @@ import Button from "./Button.astro";
   <div class="billede">
     <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/cp6.webp" alt="Billede af mennesker" />
   </div>
+
+  <img class="oliven" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/oliven.png" alt="oliven icon" />
 </div>
 
 <style>
@@ -33,12 +35,20 @@ import Button from "./Button.astro";
     text-align: center;
     border-radius: 20px;
     height: 550px;
-    margin: 35px 0 0 15px;
+    margin: 160px 0 0 15px;
   }
 
   .cp3 {
     padding: 50px 50px 0 50px;
     margin-top: 40px;
+  }
+
+  .oliven {
+    position: absolute;
+    width: 230px;
+    height: 130px;
+    top: 390%;
+    right: 0%;
   }
 
   @media screen and (min-width: 800px) {
@@ -56,6 +66,13 @@ import Button from "./Button.astro";
     }
     img {
       margin-left: 100px;
+    }
+    .oliven {
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      top: 340%;
+      right: 0%;
     }
   }
 

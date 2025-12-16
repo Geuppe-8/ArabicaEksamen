@@ -1,0 +1,15 @@
+---
+import "../styles/style.css";
+const { variant, href } = Astro.props;
+---
+
+<button class={variant} href={href}>
+  <slot />
+</button>
+
+<style>
+  .primary {
+  }
+  .secondary {
+  }
+</style>

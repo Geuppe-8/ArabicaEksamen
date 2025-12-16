@@ -1,0 +1,30 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/style.css";
+import Cp1 from "../components/Cp1.astro";
+import Cp2 from "../components/Cp2.astro";
+import Cp3 from "../components/Cp3.astro";
+import Cp4 from "../components/Cp4.astro";
+import Button from "../components/Button.astro";
+
+const url = "https://wmlxmrpnovuojremqrzo.supabase.co/rest/v1/reviews";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndtbHhtcnBub3Z1b2pyZW1xcnpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU1MzY0NDQsImV4cCI6MjA4MTExMjQ0NH0.hUGXOAKUJiFqOUyB74tc9sM2ipLgBtbTQxB3yFMoZUA";
+const options = {
+  headers: {
+    apikey: key,
+  },
+};
+---
+
+<MainLayout title="Frontpage" />
+
+<Cp1 />
+<Cp2 />
+<Cp3 />
+<Cp4 />
+
+<style>
+  body {
+    background-color: #f6f1e7;
+  }
+</style>

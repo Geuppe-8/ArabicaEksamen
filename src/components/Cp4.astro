@@ -1,0 +1,79 @@
+---
+import "../styles/style.css";
+import Button from "./Button.astro";
+---
+
+<div class="cp4">
+        <div class="tekst-4 order">
+          <h2>COLLABORATION WITH LOCAL BUSINESSES</h2>
+          <p>Arabica, we value strong connections within our neighbourhood and love working with local creators and businesses. These collaborations help us support the community around us while adding unique touches to the café.
+One of our partners is Alberte Hall Atelier, a local ceramic artist who handcrafts beautiful, small-batch pieces. Her work brings an authentic and personal feel to our space, and we’re proud to feature it in the café.
+We’re always open to new collaborations that celebrate local talent and strengthen our community.</p>
+      </div>
+
+           <div class="stacked-images">
+            <img class="bottom2" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/cp4.webp" alt="Billede af mennesker" />
+           <img class="top2"  src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/cp1.webp"/>
+        </div>
+
+          <style>
+
+      h2 {
+         color: #642d2d;
+      }
+
+   p {
+           max-width: 75ch;
+           padding-bottom: 30px;
+           color: #642d2d;
+         
+      }
+
+    
+      img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 30px;
+
+      }
+
+    .cp4 {
+        padding: 50px 50px 0 50px;
+        margin-top: 40px;
+        }
+
+.stacked-images img.top2 {
+     z-index: 2;
+  transform: translate(120px, -80px) rotate(8deg);
+    height: 225px;
+
+}
+
+
+ @media screen and (min-width: 800px) {
+    h2 {
+        text-align: left;
+    }
+     
+        .cp4 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          text-align: left;
+          gap: 250px;
+          padding: 120px 120px;
+        }
+        .stacked-images img.top2 {
+          z-index: 2;
+  transform: translate(120px, -80px) rotate(8deg);
+  height: 270px;
+
+          }
+
+    .order {
+    order: 1;
+  }
+   }
+   </style>

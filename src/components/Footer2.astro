@@ -1,0 +1,147 @@
+<footer>
+    <div class="mobillayout">
+    <div class="adresse">
+    <h1>Adress</h1>
+    <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x465253076f69cf89:0xe8b07ba4a02dfcf5?sa=X&ved=1t:8290&ictx=111" target="_blank" class="adress">Blågårdsgade 12,<br>2200 København</a>
+    </div>
+
+    <div class="kontakt">
+    <h1>Contact</h1>
+    <p>+ 45 88 75 43 28</p>
+    <p>arabicacph@gmail.dk</p>
+    <a href="https://www.instagram.com/arabicacopenhagen/" target="_blank"><img src="/public/instagram.png" alt="insta ikon"></a>
+    </div>
+    </div>
+
+    <div class="tider">
+    <h1>Opening hours</h1>
+    <p>Monday - Thursday:<br>8:00 - 16:00
+<br>Friday:<br>8:00 - 17:00<br> Saturday - Sunday:<br> 9:00 - 17:00</p>
+
+<p class="kitchen">Kitchen closes mon-fri<span class="mobil"> at 15:30<span class="desk"> and sat-sun at 16:00</span></p>
+    </div>
+</footer>
+
+<style>
+footer{
+        background-color:#642D2D;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-top: 1px solid #F6F1E7;
+}
+
+h1{
+    text-align: center;
+    color: #F6F1E7;
+font-family: Roboto;
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+margin-top: 30px;
+
+}
+
+p {
+    color: #F6F1E7;
+text-align: center;
+font-family: "DM Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+
+.adress{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #F6F1E7;
+text-align: center;
+font-family: "DM Sans";
+font-size: 12px;$
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+
+.kitchen{
+    margin-top: 13px;
+}
+a img{
+    width: 30px;
+    display: flex;
+    justify-self: center;
+    margin-top: 5px;
+}
+
+.mobil{
+    display: inline;
+}
+
+.desk{
+    display: block;
+}
+
+@media screen and (min-width: 800px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+        gap: 20px;
+    }
+
+    footer h1{
+        margin-top: 0;
+    }
+
+    .mobillayout{
+        display: contents;
+    }
+    
+    .adresse{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .tider{
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .kontakt{
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .desk{
+        display: block;
+    }
+
+    .mobil{
+        display: inline;
+    }
+
+    p{
+        color: #F6F1E7;
+text-align: center;
+font-family: "DM Sans";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+
+    .adress{
+        color: #F6F1E7;
+text-align: center;
+font-family: "DM Sans";
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    }
+}
+
+
+</style>

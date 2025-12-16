@@ -3,82 +3,87 @@ import "../styles/style.css";
 import Button from "./Button.astro";
 ---
 
-<h1>OUR COMMUNITY </h1>
+<h1>OUR COMMUNITY</h1>
 
-        <div class="cp1">
-        <div class="tekst-1">
-                <h2>COMMUNITY</h2>
-          <p>Arabica is more than just a café, it´s a gathering place for our neighborhood. Located in the vibrant Blågårds Plads area, we’re a home for locals, regulars, and everyone who finds comfort in a warm cup of coffee and genuine connection. Our regular guests are a big part of who we are, and they help shape the atmosphere that makes Arabica feel like home. Arabica is Palestinian-owned, and our roots inspire the spirit of hospitality, togetherness, and warmth that fills our space. Here, cultures meet, stories are shared, and everyone is welcome.</p>
-        </div>
-            
-        <div class="stacked-images">
-          <img class="bottom" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/cp3.webp" alt="Picture af matcha and kaffe" />
-           <img class="top"  src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/cp2.webp" alt="Billede af mennesker" />
-        </div>
+<div class="cp1">
+  <div class="tekst-1">
+    <h2>COMMUNITY</h2>
+    <p>Arabica is more than just a café, it´s a gathering place for our neighborhood. Located in the vibrant Blågårds Plads area, we’re a home for locals, regulars, and everyone who finds comfort in a warm cup of coffee and genuine connection. Our regular guests are a big part of who we are, and they help shape the atmosphere that makes Arabica feel like home. Arabica is Palestinian-owned, and our roots inspire the spirit of hospitality, togetherness, and warmth that fills our space. Here, cultures meet, stories are shared, and everyone is welcome.</p>
+  </div>
+
+  <div class="stacked-images">
+    <img class="bottom" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/cp3.webp" alt="Picture af matcha and kaffe" />
+    <img class="top" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/cp2.webp" alt="Billede af mennesker" />
+  </div>
 </div>
 
+<img src="" alt="" />
+
 <style>
+  h1 {
+    text-align: center;
+    padding-top: 60px;
+    color: #642d2d;
+  }
+  h2 {
+    color: #642d2d;
+  }
 
-      h1 {
-          text-align: center;
-          padding-top: 60px;
-          color: #642d2d;
-      }
-      h2 {
-          color: #642d2d;
-      }
+  p {
+    max-width: 75ch;
+    padding-bottom: 30px;
+    color: #642d2d;
+  }
 
-    p {
-           max-width: 75ch;
-           padding-bottom: 30px;
-           color: #642d2d;
-      }
+  img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+  }
 
-      img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 10px 30px;
-           border-radius: 20px
-      }
+  .top {
+    width: 360px;
+  }
 
-      main {
-        background-color:#f6f1e7
-      }
+  main {
+    background-color: #f6f1e7;
+  }
 
-    .stacked-images img.top  {
+  .stacked-images img.top {
     z-index: 2;
-  transform: translate(50px, -80px) rotate(15deg);
-}
+    transform: translate(50px, -80px) rotate(15deg);
+  }
 
-    .cp1 {
-        padding: 50px 50px 0 50px;
-             margin-bottom: 0 px;
-    }
+  .cp1 {
+    padding: 50px 50px 0 50px;
+    margin-bottom: 0 px;
+  }
 
-
- @media screen and (min-width: 800px) {
+  @media screen and (min-width: 800px) {
     h2 {
-        text-align: left;
+      text-align: left;
     }
-        .cp1 {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          align-items: center;
-          text-align: left;
-          gap: 150px;
-          padding: 120px 120px;
-        }
-
+    .cp1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      text-align: left;
+      gap: 150px;
+      padding: 120px 120px;
+    }
 
     .bottom {
       height: 400px;
     }
 
     .top {
-        height: 250px;
+      height: 250px;
     }
 
-         }
+    img {
+      max-width: 100%;
+    }
+  }
 </style>

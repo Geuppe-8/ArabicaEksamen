@@ -1,9 +1,10 @@
 ---
-import Navigation from "../components/Navigation.astro";
-import Footer from "../components/Footer.astro";
+import Navigation2 from "../components/Navigation2.astro";
+import Footer2 from "../components/Footer2.astro";
 import "../styles/style.css";
 ---
 
+<Navigation2 />
 <body class="page">
   <header class="bar"></header>
 
@@ -47,10 +48,13 @@ import "../styles/style.css";
   </main>
 </body>
 
+<Footer2 />
+
 <style>
   main {
     background-color: #642d2d;
     color: #f6f1e7;
+    padding: 100px 0;
   }
   .page {
     background: var(--bg);
@@ -65,6 +69,7 @@ import "../styles/style.css";
   }
   .contact_tekst {
     text-align: center;
+    margin-left: 200px;
   }
 
   img {
@@ -82,7 +87,6 @@ import "../styles/style.css";
       grid-template-columns: 1fr 1fr;
       gap: 250px;
       align-items: center;
-      margin: 100px 50px;
     }
     .contact_tekst {
       text-align: left;

@@ -3,61 +3,245 @@ import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
 ---
 
-
-	<body class="page">
+<html lang="en">
+  <body class="page">
     <header class="bar"></header>
 
     <main class="wrap">
       <h1 class="title">MENU</h1>
-  <!--  -->
-     <section class="section">
-  <h3 class="sectionTitle">PLATES</h3>
-  <div class="divider"></div>
+      <!--  -->
+      <section class="section">
+        <h3 class="sectionTitle">PLATES</h3>
+        <div class="divider"></div>
 
-  <div class="to-kolonner">
-    <article class="afsnit">
-      <div class="afsnit-linje">
-        <strong>Morning Plate</strong>
-        <strong>69,-</strong>
-      </div>
-      <p class="afsnit-tekst">
-        Choose between | Rye Bread | Bun<br />
-        Served with bread, butter, Iberico cheese, yoghurt, a soft boiled egg, fresh fruit & jam
-      </p>
-    </article>
+        <div class="to-kolonner">
+          <article class="afsnit">
+            <div class="afsnit-linje">
+              <strong>Morning Plate</strong>
+              <strong>69,-</strong>
+            </div>
+            <p class="afsnit-tekst">
+              Choose between | Rye Bread | Bun<br />
+              Served with bread, butter, Iberico cheese, yoghurt, a soft boiled egg, fresh fruit & jam
+            </p>
+          </article>
 
-    <article class="afsnit">
-      <div class="afsnit-linje">
-        <strong>Mini Brunch</strong>
-        <strong>109,-</strong>
-      </div>
-      <p class="afsnit-tekst">
-        Choose between | Rye Bread | Bun<br />
-        Served with bread, butter, scrambled eggs, Iberico cheese, sausages, fresh fruit & pancake
-      </p>
-    </article>
+          <article class="afsnit">
+            <div class="afsnit-linje">
+              <strong>Mini Brunch</strong>
+              <strong>109,-</strong>
+            </div>
+            <p class="afsnit-tekst">
+              Choose between | Rye Bread | Bun<br />
+              Served with bread, butter, scrambled eggs, Iberico cheese, sausages, fresh fruit & pancake
+            </p>
+          </article>
 
-    <article class="afsnit">
-      <div class="afsnit-linje">
-        <strong>Granola Bowl</strong>
-        <strong>49,-</strong>
-      </div>
-      <p class="afsnit-tekst">
-        Creamy Greek yoghurt topped with granola, fresh fruit & a drizzle of honey
-      </p>
-    </article>
+          <article class="afsnit">
+            <div class="afsnit-linje">
+              <strong>Granola Bowl</strong>
+              <strong>49,-</strong>
+            </div>
+            <p class="afsnit-tekst">Creamy Greek yoghurt topped with granola, fresh fruit & a drizzle of honey</p>
+          </article>
 
-    <article class="afsnit">
-      <div class="afsnit-linje">
-        <strong>Buttermilk Pancakes</strong>
-        <strong>49,-</strong>
-      </div>
-      <p class="afsnit-tekst">
-        Fluffy buttermilk pancakes served with whipped creme fraiche, fresh fruit & a drizzle of honey
-      </p>
+          <article class="afsnit">
+            <div class="afsnit-linje">
+              <strong>Buttermilk Pancakes</strong>
+              <strong>49,-</strong>
+            </div>
+            <p class="afsnit-tekst">Fluffy buttermilk pancakes served with whipped creme fraiche, fresh fruit & a drizzle of honey</p>
+          </article>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section">
+        <h3 class="sectionTitle">MEZZE</h3>
+
+        <div class="mezze-top">
+          <div class="mezze-priser">
+            <strong>1 for 40,-</strong>
+            <span class="pris-divider">|</span>
+            <strong>3 for 100,-</strong>
+          </div>
+          <strong class="extra-bread">Extra bread 15,-</strong>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="mezze">
+          <!-- Kolonne 1 -->
+          <div class="mezze-group">
+            <div class="mezze-item"><strong>Labneh</strong><p>Arabic yoghurt balls</p></div>
+            <div class="mezze-item"><strong>Labneh Spread</strong><p>Arabic yoghurt</p></div>
+            <div class="mezze-item"><strong>Hummus</strong><p>Chickpea spread</p></div>
+            <div class="mezze-item"><strong>Baba Ghanoush</strong><p>Eggplant spread</p></div>
+          </div>
+
+          <!-- Kolonne 2 -->
+          <div class="mezze-group">
+            <div class="mezze-item"><strong>Foul</strong><p>Fava bean spread</p></div>
+            <div class="mezze-item"><strong>Feteer – Egg +5,-</strong><p>Sautéed mushrooms</p></div>
+            <div class="mezze_skillet">
+              <div class="mezze-item"><strong>Scrambled Eggs</strong><p>With chives</p></div>
+              <div class="mezze-item"><strong>Bed Belzataar</strong><p>Boiled egg with thyme</p></div>
+            </div>
+            <img class="skillet" src="/SVG/skillet_æg.svg" alt="Skillet_æg" />
+          </div>
+          <section class="opdeling1">
+            <!-- Kolonne 3 -->
+            <div class="mezze-group">
+              <div>
+                <div class="mezze-item"><strong>Halloumi</strong><p>Grilled halloumi cheese</p></div>
+                <div class="mezze-item"><strong>Sucuk</strong><p>Fried sausage</p></div>
+              </div>
+
+              <div>
+                <div class="mezze-item"><strong>Jebneh Bandura</strong><p>Arabic cheese w/ tomato</p></div>
+                <div class="mezze-item"><strong>Naqaniq</strong><p>Chicken sausage</p></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section">
+        <h3 class="sectionTitle">SANDWICHES</h3>
+        <div class="divider"></div>
+
+        <div class="to-kolonner">
+          <article class="afsnit">
+            <div class="afsnit-linje">
+              <strong>Arabica Sandwiches</strong>
+              <strong>69,-</strong>
+            </div>
+            <p class="afsnit-tekst">
+              Choose between | Halloumi | Chicken | Turkey<br />
+              Toasted whole grain bread layered with fresh tomatoes, mixed greens & our homemade pesto
+            </p>
+          </article>
+
+          <article class="afsnit">
+            <div class="afsnit-linje">
+              <strong>Classic Sandwiches</strong>
+              <strong>69,-</strong>
+            </div>
+            <p class="afsnit-tekst">
+              Choose between | Homemade Tuna Mousse | Egg<br />
+              Toasted whole grain bread layered with fresh tomatoes, mixed greens & mayo
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!--  -->
+
+      <section class="section">
+        <div class="to-sektioner">
+          <div>
+            <h3 class="sectionTitle">SKILLET DISHES</h3>
+            <div class="divider"></div>
+
+            <article class="afsnit">
+              <div class="afsnit-linje"><strong>Mfaraket Batata</strong><strong>69,-</strong></div>
+              <p class="afsnit-tekst">Sautéed potatoes & eggs cooked with warm Arabic spices</p>
+            </article>
+            <div class="skillet_sandwich">
+              <article class="afsnit">
+                <div class="afsnit-linje"><strong>JazzMazz w/ Sucuk</strong><strong>69,-</strong></div>
+                <p class="afsnit-tekst">Eggs, sucuk & tomatoes simmered with warm Arabic spices</p>
+              </article>
+              <img class="sandwich" src="public/SVG/sandwich.svg" alt="sandwich" />
+            </div>
+            <article class="afsnit">
+              <div class="afsnit-linje"><strong>JazzMazz</strong><strong>65,-</strong></div>
+              <p class="afsnit-tekst">Eggs & tomatoes simmered with warm Arabic spices</p>
+            </article>
+          </div>
+
+          <div>
+            <h3 class="sectionTitle">TOASTS</h3>
+            <div class="divider"></div>
+            <div class="toast_avocado">
+              <article class="afsnit">
+                <div class="afsnit-linje"><strong>Avocado Toast</strong><strong>80,-</strong></div>
+                <p class="afsnit-tekst">Toasted sourdough with avocado, hummus, mixed greens & cheese</p>
+              </article>
+              <img class="avocado" src="public/SVG/avokado.svg" alt="avokado" />
+            </div>
+            <article class="afsnit">
+              <div class="afsnit-linje"><strong>Grilled Cheese</strong><strong>80,-</strong></div>
+              <p class="afsnit-tekst">Toasted whole grain bread layered with homemade red pesto & pickles</p>
+            </article>
+
+            <article class="afsnit">
+              <div class="afsnit-linje"><strong>Tuna Melt</strong><strong>80,-</strong></div>
+              <p class="afsnit-tekst">Toasted sourdough with our homemade tuna mousse, red pesto & pickles</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <section class="section">
+        <div class="to-sektioner">
+          <div>
+            <h3 class="sectionTitle">HOT DRINKS</h3>
+            <div class="divider"></div>
+
+            <section class="opdeling">
+              <div>
+                <article class="afsnit">
+                  <div class="afsnit-linje"><strong>LATTE</strong><strong>45,-</strong></div>
+                </article>
+                <article class="afsnit">
+                  <div class="afsnit-linje"><strong>CAPPUCCINO </strong><strong>45,-</strong></div>
+                </article>
+                <article class="afsnit">
+                  <div class="afsnit-linje"><strong>FLAT WHITE</strong><strong>40,-</strong></div>
+                </article>
+                <article class="afsnit">
+                  <div class="afsnit-linje"><strong>CORTADO</strong><strong>35,-</strong></div>
+                </article>
+                <article class="afsnit">
+                  <div class="afsnit-linje"><strong>MACCHIATO</strong><strong>35,-</strong></div>
+                </article><article class="afsnit">
+                  <div class="afsnit-linje"><strong>ESPRESSO</strong><strong>30,-</strong></div>
+                </article>
+              </div><article class="afsnit">
+                <div class="afsnit-linje"><strong>AMERICANO</strong><strong>35,-</strong></div>
+              </article>
+            </section><article class="afsnit">
+              <div class="afsnit-linje"><strong>FILTER</strong><strong>25,-</strong></div>
+            </article>
+          </div>
+
+          <div></div><article class="afsnit">
+            <div class="afsnit-linje"><strong>FILTER REFILL</strong><strong>20,-</strong></div>
+          </article>
+        </div><article class="afsnit">
+          <div class="afsnit-linje"><strong>HOT CHOKO</strong><strong> 50,-</strong></div>
+        </article>
+      </section><article class="afsnit">
+        <div class="afsnit-linje"><strong>CHAI LATTE</strong><strong>50,-</strong></div>
+      </article>
+    </main><article class="afsnit">
+      <div class="afsnit-linje"><strong>DIRTY CHAI</strong><strong>55,-</strong></div>
     </article>
-  </div>
-</section>
+  </body><article class="afsnit">
+    <div class="afsnit-linje"><strong>TUMERIC LATTE</strong><strong>48,-</strong></div>
+  </article>
+</html><article class="afsnit">
+  <div class="afsnit-linje"><strong>MATCHA LATTE</strong><strong>25,-</strong></div>
+</article>
+<article class="afsnit">
+  <div class="afsnit-linje"><strong>GINGER HONEY TEA</strong><strong>35,-</strong></div>
+</article>
+<article class="afsnit">
+  <div class="afsnit-linje"><strong>TEA</strong><strong>30,-</strong></div>
+</article>
 
 <!--  -->
 <section class="section">
@@ -111,358 +295,208 @@ import Footer from "../components/Footer.astro";
   </section>
   </div>
 </section>
-
-<!--  -->
-     <section class="section">
-  <h3 class="sectionTitle">SANDWICHES</h3>
-  <div class="divider"></div>
-
-  <div class="to-kolonner">
-    <article class="afsnit">
-      <div class="afsnit-linje">
-        <strong>Arabica Sandwiches</strong>
-        <strong>69,-</strong>
-      </div>
-      <p class="afsnit-tekst">
-        Choose between | Halloumi | Chicken | Turkey<br />
-        Toasted whole grain bread layered with fresh tomatoes, mixed greens & our homemade pesto
-      </p>
-    </article>
-
-    <article class="afsnit">
-      <div class="afsnit-linje">
-        <strong>Classic Sandwiches</strong>
-        <strong>69,-</strong>
-      </div>
-      <p class="afsnit-tekst">
-        Choose between | Homemade Tuna Mousse | Egg<br />
-        Toasted whole grain bread layered with fresh tomatoes, mixed greens & mayo
-      </p>
-    </article>
-  </div>
-</section>
-
-<!--  -->
-
-<section class="section">
-  <div class="to-sektioner">
-    <div>
-      <h3 class="sectionTitle">SKILLET DISHES</h3>
-      <div class="divider"></div>
-     
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>Mfaraket Batata</strong><strong>69,-</strong></div>
-        <p class="afsnit-tekst">Sautéed potatoes & eggs cooked with warm Arabic spices</p>
-      </article>
-      <div class="skillet_sandwich">
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>JazzMazz w/ Sucuk</strong><strong>69,-</strong></div>
-        <p class="afsnit-tekst">Eggs, sucuk & tomatoes simmered with warm Arabic spices</p>
-      </article>
-      <img class="sandwich" src="public/SVG/sandwich.svg" alt="sandwich">
-</div>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>JazzMazz</strong><strong>65,-</strong></div>
-        <p class="afsnit-tekst">Eggs & tomatoes simmered with warm Arabic spices</p>
-      </article>
-    </div>
-  
-    <div>
-      <h3 class="sectionTitle">TOASTS</h3>
-      <div class="divider"></div>
-  <div class="toast_avocado"> 
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>Avocado Toast</strong><strong>80,-</strong></div>
-        <p class="afsnit-tekst">Toasted sourdough with avocado, hummus, mixed greens & cheese</p>
-      </article> 
-      <img class="avocado" src="public/SVG/avokado.svg" alt="avokado">
-</div>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>Grilled Cheese</strong><strong>80,-</strong></div>
-        <p class="afsnit-tekst">Toasted whole grain bread layered with homemade red pesto & pickles</p>
-      </article>
-
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>Tuna Melt</strong><strong>80,-</strong></div>
-        <p class="afsnit-tekst">Toasted sourdough with our homemade tuna mousse, red pesto & pickles</p>
-      </article>
-    </div>
-  </div>
-</section>
-
-
-  <!--  -->
-<section class="section">
-  <div class="to-sektioner">
-    <div>
-      <h3 class="sectionTitle">HOT DRINKS</h3>
-      <div class="divider"></div>
-
-      <section class="opdeling"> 
 <div>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>LATTE</strong><strong>45,-</strong></div>
-      </article>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>CAPPUCCINO </strong><strong>45,-</strong></div>
-      </article>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>FLAT WHITE</strong><strong>40,-</strong></div>
-      </article>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>CORTADO</strong><strong>35,-</strong></div>
-      </article>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>MACCHIATO</strong><strong>35,-</strong></div>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>ESPRESSO</strong><strong>30,-</strong></div>
-      </article>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>AMERICANO</strong><strong>35,-</strong></div>
-      </article>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>FILTER</strong><strong>25,-</strong></div>
-      </article>
-       </div> 
+  <h3 class="sectionTitle">COLD DRINKS</h3>
 
-       <div>
-        </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>FILTER REFILL</strong><strong>20,-</strong></div>
-      </article>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>HOT CHOKO</strong><strong> 50,-</strong></div>
-      </article>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>CHAI LATTE</strong><strong>50,-</strong></div>
-      </article>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>DIRTY CHAI</strong><strong>55,-</strong></div>
-      </article>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>TUMERIC LATTE</strong><strong>48,-</strong></div>
-      </article>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>MATCHA LATTE</strong><strong>25,-</strong></div>
-      </article>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>GINGER HONEY TEA</strong><strong>35,-</strong></div>
-      </article>
-      </article><article class="afsnit">
-        <div class="afsnit-linje"><strong>TEA</strong><strong>30,-</strong></div>
-      </article>
-    </div>
-    </section>
-    </div>
-
-    <div>
-      <h3 class="sectionTitle">COLD DRINKS</h3>
-      
-      <div class="divider"></div>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>ICED LATTE</strong><strong>50,-</strong></div>
-      </article>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>ICED AMERICANO</strong><strong>40,-</strong></div>
-      </article>
-      <div class="cold_matcha">
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>ICED MATCHA LATTE</strong><strong>55,-</strong></div>
-      </article>
-      <img class="matcha" src="public/SVG/matcha.svg" alt="matcha drink">
-    </div>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>HOMEMADE ICED TEA</strong><strong>50,-</strong></div>
-      </article>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>HOMEMADE LEMONADE</strong><strong>50,-</strong></div>
-      </article>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>ORANGE JUICE</strong><strong>50,-</strong></div>
-      </article>
-      <article class="afsnit">
-        <div class="afsnit-linje"><strong>GINGER BEER</strong><strong>50,-</strong></div>
-      </article>
-    </div>
+  <div class="divider"></div>
+  <article class="afsnit">
+    <div class="afsnit-linje"><strong>ICED LATTE</strong><strong>50,-</strong></div>
+  </article>
+  <article class="afsnit">
+    <div class="afsnit-linje"><strong>ICED AMERICANO</strong><strong>40,-</strong></div>
+  </article>
+  <div class="cold_matcha">
+    <article class="afsnit">
+      <div class="afsnit-linje"><strong>ICED MATCHA LATTE</strong><strong>55,-</strong></div>
+    </article>
+    <img class="matcha" src="public/SVG/matcha.svg" alt="matcha drink" />
   </div>
-</section>
-</main>
-  <!--  -->  
-  <header class="bar"></header>
+  <article class="afsnit">
+    <div class="afsnit-linje"><strong>HOMEMADE ICED TEA</strong><strong>50,-</strong></div>
+  </article>
+  <article class="afsnit">
+    <div class="afsnit-linje"><strong>HOMEMADE LEMONADE</strong><strong>50,-</strong></div>
+  </article>
+  <article class="afsnit">
+    <div class="afsnit-linje"><strong>ORANGE JUICE</strong><strong>50,-</strong></div>
+  </article>
+  <article class="afsnit">
+    <div class="afsnit-linje"><strong>GINGER BEER</strong><strong>50,-</strong></div>
+  </article>
+</div>
 
-    <footer class="bar"></footer>
-  </body>
+<!--  -->
+<header class="bar"></header>
 
-</html>
- <style>
-  :root{
-    --bg:#642D2D;
-    --fg:#F6F1E7;
+<footer class="bar"></footer>
+
+<style>
+  :root {
+    --bg: #642d2d;
+    --fg: #f6f1e7;
   }
-  
 
-  .page{
-    background:var(--bg);
-    color:var(--fg);
+  .page {
+    background: var(--bg);
+    color: var(--fg);
   }
 
   /*Header/footer*/
-  .bar{
-    background:var(--bg);
+  .bar {
+    background: var(--bg);
   }
 
-  .wrap{
-  padding:24px 26px;
+  .wrap {
+    padding: 24px 26px;
   }
 
   /*linjer*/
-  .divider{
-    height:1px;
-    background:var(--fg);
-    margin:12px 0 16px;
+  .divider {
+    height: 1px;
+    background: var(--fg);
+    margin: 12px 0 16px;
   }
 
-  .section{
-    margin-top:20px;
+  .section {
+    margin-top: 20px;
   }
 
   /* Menu items */
-  .afsnit{
-    margin-bottom:30px;
+  .afsnit {
+    margin-bottom: 30px;
   }
 
-  .afsnit-linje{
-    display:flex;
-    justify-content:space-between;
+  .afsnit-linje {
+    display: flex;
+    justify-content: space-between;
   }
 
-  
-  .afsnit-tekst{
-    margin:6px 0 0;
-    color:var(--fg);
-    line-height:1.5;
+  .afsnit-tekst {
+    margin: 6px 0 0;
+    color: var(--fg);
+    line-height: 1.5;
   }
-  .to-kolonner{
-  display: grid;
-  gap: 18px;
-}
+  .to-kolonner {
+    display: grid;
+    gap: 18px;
+  }
 
-.to-sektioner{
-  display: grid;
-  gap: 28px;
-  align-items: start;
-}
+  .to-sektioner {
+    display: grid;
+    gap: 28px;
+    align-items: start;
+  }
 
-.matcha {
-  display: none;
-}
-.skillet{ 
-  display: none;
-}
-.sandwich {
-  display: none;
-}
-.avocado{
-  display: none;
-}
-.opdeling{
-  display: flex;
-  flex-direction: row;
-  gap: 150px;
-}
-.opdeling1{
-  display: flex;
-  flex-direction: column;
-  gap: 150px;
-}
+  .matcha {
+    display: none;
+  }
+  .skillet {
+    display: none;
+  }
+  .sandwich {
+    display: none;
+  }
+  .avocado {
+    display: none;
+  }
+  .opdeling {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+  }
+  .opdeling1 {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+  }
 
-/*MEZZE*/
+  /*MEZZE*/
 
-.mezze-top{
-  display:flex;
-  justify-content:space-between;
-}
+  .mezze-top {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.pris-divider{
-  margin: 0 16px;
-  font-weight: 400;
-}
+  .pris-divider {
+    margin: 0 16px;
+    font-weight: 400;
+  }
 
-.mezze{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 28px 60px;
-  margin-top:16px;
-}
-
-.mezze-group{
-  display:grid;
-  gap:18px;
-  margin-bottom:25px;
-}
-
-.mezze-item p{
-  margin:6px 0 0;
-  margin-bottom:15px;
-}
-
-/* Desktop: 3 kolonner */
-@media (min-width: 800px){
-  .to-kolonner{
+  .mezze {
+    display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 28px 56px;
+    gap: 28px 60px;
+    margin-top: 16px;
   }
 
-  .to-sektioner{
-    grid-template-columns: 1fr 1fr;
-    gap: 56px;
+  .mezze-group {
+    display: grid;
+    gap: 18px;
+    margin-bottom: 25px;
   }
-  .mezze{
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 48px 90px;
-  }
-  .opdeling{
-  gap: 270px;
-}
-.mezze_skillet{
-  position: relative;
-}
-.toast_avocado{
-  position: relative;
-}
-.cold_matcha{
-  position: relative;
-}
-.skillet_sandwich{
-  position: relative;
-}
-.matcha {
-  display: inline;
-  position: absolute;
-  width: 40px;
-  bottom: -40px;
-  right: 350px;
-}
-.skillet{
-  display: inline;
-  position: absolute;
-  width: 80px;
-  top: 600px;
-  left: 10px;
-}
-.avocado {
-  display: inline;
-  position: absolute;
-  width: 60px;
-  top:20px;
-  right: 100px;
-}
-.sandwich{
-  display: inline;
-  position: absolute;
-  width: 80px;
-  top: 5px;
-  left: 550px;
-}
 
-}
+  .mezze-item p {
+    margin: 6px 0 0;
+    margin-bottom: 15px;
+  }
+
+  /* Desktop: 3 kolonner */
+  @media (min-width: 800px) {
+    .to-kolonner {
+      grid-template-columns: 1fr 1fr;
+      gap: 28px 56px;
+    }
+
+    .to-sektioner {
+      grid-template-columns: 1fr 1fr;
+      gap: 56px;
+    }
+    .mezze {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 48px 90px;
+    }
+    .opdeling {
+      gap: 270px;
+    }
+    .mezze_skillet {
+      position: relative;
+    }
+    .toast_avocado {
+      position: relative;
+    }
+    .cold_matcha {
+      position: relative;
+    }
+    .skillet_sandwich {
+      position: relative;
+    }
+    .matcha {
+      display: inline;
+      position: absolute;
+      width: 40px;
+      bottom: -40px;
+      right: 350px;
+    }
+    .skillet {
+      display: inline;
+      position: absolute;
+      width: 80px;
+      top: 600px;
+      left: 10px;
+    }
+    .avocado {
+      display: inline;
+      position: absolute;
+      width: 60px;
+      top: 20px;
+      right: 100px;
+    }
+    .sandwich {
+      display: inline;
+      position: absolute;
+      width: 80px;
+      top: 5px;
+      left: 550px;
+    }
+  }
 </style>

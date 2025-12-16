@@ -1,0 +1,55 @@
+---
+import "../styles/style.css";
+import Button from "./Button.astro";
+---
+
+<div class="cp2">
+  <div class="tekst-2">
+    <h2>KINDNESS BOARD</h2>
+    <p>Over the years, we’ve built a close and caring community here at Arabica — one shaped by good coffee, everyday moments, and the people who walk through our doors. To pass some of that kindness forward, we’ve introduced our Pay It Forward board.  It’s a simple way to support someone who might need a little lift. How it works: 1. Pre-pay for a coffee, meal, or any item from our menu. 2. We’ll place the receipt on our Kindness Board. 3. Anyone who needs it can pick a receipt and enjoy it — no questions asked. A small gesture, shared from one neighbour to another.</p>
+  </div>
+
+  <div class="stacked-images">
+    <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/cp5.webp" alt="Billede af mennesker" />
+  </div>
+</div>
+
+<style>
+  h2 {
+    color: #642d2d;
+  }
+
+  p {
+    max-width: 75ch;
+    padding-bottom: 30px;
+    color: #642d2d;
+  }
+
+  img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    height: 550px;
+  }
+
+  .cp2 {
+    padding: 50px 50px 0 50px;
+  }
+
+  @media screen and (min-width: 800px) {
+    h2 {
+      text-align: left;
+    }
+
+    .cp2 {
+      display: grid;
+      grid-template-columns: 3fr 3fr;
+      align-items: center;
+      text-align: left;
+      gap: 150px;
+      padding: 80px 120px;
+    }
+  }
+</style>

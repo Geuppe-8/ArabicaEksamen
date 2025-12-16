@@ -1,46 +1,45 @@
-
 <header>
-        <div class="logo">
-            <a href="index.html">
-                <p>ARABICA<span class="arabisk">أرابيكا</span></p>
-            </a>
-        </div>
+  <div class="logo">
+    <a href="index.html">
+      <p>ARABICA<span class="arabisk">أرابيكا</span></p>
+    </a>
+  </div>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="/index">HOME</a></li>
-                <li><a href="/menu">MENU</a></li>
-                <li><a href="/community">OUR COMMUNITY</a></li>
-                <li><a href="/contact">CONTACT</a></li>
-            </ul>
-        </nav>
+  <nav>
+    <ul class="menu">
+      <li><a href="/src/pages/index.astro">HOME</a></li>
+      <li><a href="src/pages/menu.astro">MENU</a></li>
+      <li><a href="/src/pages/community.astro">OUR COMMUNITY</a></li>
+      <li><a href="/src/pages/contact.astro">CONTACT</a></li>
+    </ul>
+  </nav>
 
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
-    </header>
+  <div class="burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</header>
 
 <script>
-const burger = document.querySelector(".burger");
-const nav = document.querySelector("nav");
-const menu = document.querySelector(".menu");
+  const burger = document.querySelector(".burger");
+  const nav = document.querySelector("nav");
+  const menu = document.querySelector(".menu");
 
-burger.addEventListener("click", burgerClick);
-function burgerClick() {
-  burger.classList.toggle("active");
-  nav.classList.toggle("active");
-}
-menu.addEventListener("click", menuClick);
-function menuClick() {
-  burger.classList.remove("active");
-  nav.classList.remove("active");
-}
+  burger.addEventListener("click", burgerClick);
+  function burgerClick() {
+    burger.classList.toggle("active");
+    nav.classList.toggle("active");
+  }
+  menu.addEventListener("click", menuClick);
+  function menuClick() {
+    burger.classList.remove("active");
+    nav.classList.remove("active");
+  }
 </script>
 
 <style>
-.menu {
+  .menu {
     display: none;
   }
 
@@ -48,55 +47,55 @@ function menuClick() {
     display: inline;
   }
 
-header{
+  header {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px;
-    background: #F6F1E7;
-}  
+    background: #f6f1e7;
+  }
 
-.logo p {
-  font-size: 25px;
-  color: #642D2D;
-text-align: left;
-font-family: Roboto;
-font-style: italic;
-font-weight: 700;
-line-height: 25px;
-}
+  .logo p {
+    font-size: 25px;
+    color: #642d2d;
+    text-align: left;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 25px;
+  }
 
-.logo a{
+  .logo a {
     text-decoration: none;
-}
+  }
 
-.arabisk{
+  .arabisk {
     display: block;
     text-align: right;
     margin-right: 5px;
-}
+  }
 
-.burger {
-  width: 30px;
-  height: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 8px;     
-margin-left: auto;
-}
+  .burger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    margin-left: auto;
+  }
 
-.burger .line {
-  width: 30px;
-  height: 1px;
-  background-color: #642D2D;
-  transition: 0.2s linear;
-  transform-origin: center;
-}
+  .burger .line {
+    width: 30px;
+    height: 1px;
+    background-color: #642d2d;
+    transition: 0.2s linear;
+    transform-origin: center;
+  }
 
   .burger.active .line:nth-child(1) {
-    transform:  translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
     transition: 0.2s linear;
   }
 
@@ -105,7 +104,7 @@ margin-left: auto;
   }
 
   .burger.active .line:nth-child(3) {
-    transform:  translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
     transition: 0.2s linear;
   }
 
@@ -126,51 +125,49 @@ margin-left: auto;
 
   nav.active .menu a {
     text-decoration: none;
-    color: #642D2D;
-font-family: "DM Sans";
-font-size: 15px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
+    color: #642d2d;
+    font-family: "DM Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
   }
-  
-  
 
-@media screen and (min-width: 800px){
-header {
-  display: flex;
-  align-items: center;
-  justify-content: right;
-  padding: 20px;
-  position: relative;
-}
+  @media screen and (min-width: 800px) {
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      padding: 20px;
+      position: relative;
+    }
 
-nav {
-  margin-left: auto ;
-  display: flex;
-  justify-content: center;
-}
+    nav {
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
+    }
 
-.menu {
-  display: flex;
-  gap: 40px;
-  list-style: none;
-}
+    .menu {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
 
-.menu li a {
-    text-decoration: none;
-  color: #642D2D;
-font-family: "DM Sans";
-font-size: 15px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-transform: uppercase;
-}
+    .menu li a {
+      text-decoration: none;
+      color: #642d2d;
+      font-family: "DM Sans";
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
 
-.burger {
-  display: none;
-}
-}
+    .burger {
+      display: none;
+    }
+  }
 </style>

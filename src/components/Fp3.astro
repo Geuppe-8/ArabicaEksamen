@@ -1,0 +1,55 @@
+<section class="insta-section">
+  <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-insta-1.webp" alt="Picture of cups" />
+  <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-insta-2.webp" alt="Picture of pancakes" />
+  <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-insta-3.webp" alt="Picture of a dog and tomato soup" />
+  <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-insta-5.webp" alt="Picyure of a yogurt bowl" />
+  <img class="insta-img-4" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-insta-4.webp" alt="Picture of a cup of coffee" />
+</section>
+
+<style>
+  .insta-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 100px 50px;
+  }
+
+  .insta-img-4 {
+    display: none;
+  }
+
+  h1 {
+    font-family: "Roboto", sans-serif;
+    color: #642d2d;
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    color: #642d2d;
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif;
+    color: #642d2d;
+  }
+
+  .fp-section-1 p {
+    color: #642d2d;
+  }
+
+  @media screen and (min-width: 800px) {
+    .insta-section {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin: 50px 50px;
+    }
+
+    .insta-section img {
+      width: 100%;
+      aspect-ratio: 278 / 299;
+      object-fit: cover;
+      display: block;
+      border-radius: 15px;
+    }
+  }
+</style>

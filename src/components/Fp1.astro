@@ -1,0 +1,72 @@
+---
+import "../styles/style.css";
+import Button from "./Button.astro";
+---
+
+<section class="fp-section-1">
+  <div>
+    <img class="img-1" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-fp-1.webp" alt="Picture of middleeastern food" />
+    <h3>Menu</h3>
+    <p>Discover the Middle Eastern flavors we love to share. Made for every guest at our table.</p>
+    <Button variant="primary" />
+  </div>
+  <div>
+    <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-fp-2.webp" alt="Picture af matcha and kaffe" />
+    <h3>Opening Hours</h3>
+    <p>Monday - Thursday: 8:00 - 16:00 Friday: 8:00 - 17:00 Saturday – Sunday: 9:00 – 17:00</p>
+    <a href="/community">lalalal</a>
+  </div>
+  <div>
+    <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-fp-3.webp" alt="Picture of grilled cheese" />
+    <h3>Contact</h3>
+    <p>Need allergen info, have a question, or want to book our cozy space? We’d love to hear from you.</p>
+    <Button variant="primary" />
+  </div>
+</section>
+
+<style>
+  h1 {
+    font-family: "Roboto", sans-serif;
+    color: #642d2d;
+  }
+
+  h2 {
+    font-family: "Roboto", sans-serif;
+    color: #642d2d;
+  }
+
+  h3 {
+    font-family: "Roboto", sans-serif;
+    color: #642d2d;
+  }
+
+  img {
+    height: 628px;
+  }
+
+  img {
+    padding-bottom: 45px;
+  }
+
+  .fp-section-1 p {
+    max-width: 30ch;
+    color: #642d2d;
+  }
+  @media screen and (min-width: 800px) {
+    .fp-section-1 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      margin: 100px 50px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .fp-section-1 img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+</style>

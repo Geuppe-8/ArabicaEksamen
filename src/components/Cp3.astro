@@ -1,0 +1,67 @@
+---
+import "../styles/style.css";
+import Button from "./Button.astro";
+---
+
+<div class="cp3">
+    
+        <div class="tekst-3 order">
+          <h2>EVENTS</h2>
+          <p>Our space is available for private events, whether you’re planning a gathering, workshop, meeting, or something a little more creative. Arabica has hosted everything from poetry nights to community meet-ups, and our warm, intimate atmosphere makes it a comfortable setting for many types of events.
+            If you’d like to rent the café for an evening or a specific time slot, feel free to reach out — we’re happy to help bring your event to life.</p>
+        </div>
+
+        <div class="billede">
+          <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/cp6.webp" alt="Billede af mennesker" />
+      </div>
+</div>
+
+<style>
+
+      h2 {
+          color: #642d2d;
+      }
+
+    p {
+           max-width: 75ch;
+           padding-bottom: 30px;
+           color: #642d2d;
+      }
+
+      img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px 30px;
+           border-radius: 15%;
+
+      }
+    
+    .cp3 {
+        padding:50px 50px 0 50px;
+              margin-top: 40px;
+    }
+
+ @media screen and (min-width: 800px) {
+    h2 {
+        text-align: left;
+    }
+
+         .cp3 {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          align-items: center;
+          text-align: left;
+          gap: 150px;
+          padding: 120px 120px;
+        }
+
+         }
+    
+     .order {
+    order: 1;
+  }
+     
+
+    </style>

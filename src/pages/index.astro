@@ -1,11 +1,36 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/style.css";
+import Hero from "../components/Hero.astro";
+import Fp2 from "../components/Fp2.astro";
+import Fp3 from "../components/Fp3.astro";
+import Fp1 from "../components/Fp1.astro";
+import Frontpagetext from "../components/Frontpagetext.astro";
+const url = "https://wmlxmrpnovuojremqrzo.supabase.co/rest/v1/reviews";
+const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndtbHhtcnBub3Z1b2pyZW1xcnpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU1MzY0NDQsImV4cCI6MjA4MTExMjQ0NH0.hUGXOAKUJiFqOUyB74tc9sM2ipLgBtbTQxB3yFMoZUA";
+const options = {
+  headers: {
+    apikey: key,
+  },
+};
+
+const supaRequest = await fetch(url, options);
+const supaData = await supaRequest.json();
+
+console.log("supaData", supaData);
 ---
 
 <MainLayout title="Frontpage" />
-
-<h1>CHAIMA ER SEJ</h1>
-<h2>BATUL ER SEJ</h2>
-<h3>HUMIRA ER SEJ</h3>
-
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque atque vitae sint, quis esse deserunt facere obcaecati distinctio non veritatis maiores ducimus excepturi libero aliquid odio officia illo, necessitatibus reprehenderit?</p>
+<Hero />
+<Frontpagetext title="A MIDDLE EASTERN UNIVERSE" body="Enjoy the flavors of the Middle East just in the heart of Copenhagen. Come as you are. Stay for the community." />
+<Fp1 />
+<Frontpagetext title="OUR HOUSE" body="Enjoy the flavors of the Middle East just in the heart of Copenhagen. Come as you are. Stay for the community." />
+<Fp2 />
+<Frontpagetext title="GET TO KNOW ARABICA" body="Follow us on Instagram for weekly posts of our food, community, and good vibes. We also share upcoming events with you" />
+<Fp3 />
+<MainLayout />
+<style>
+  body {
+    background-color: #f6f1e7;
+  }
+</style>

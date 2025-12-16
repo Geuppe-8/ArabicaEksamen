@@ -1,0 +1,97 @@
+---
+import "../styles/style.css";
+import Button from "../components/Button.astro";
+---
+
+<section class="fp-section-1">
+  <div>
+    <img class="img-1" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-fp-1.webp" alt="Picture of middleeastern food" />
+    <h3>Menu</h3>
+    <p>Discover the Middle Eastern flavors we love to share. Made for every guest at our table.</p>
+    <a class="btn" href="/menu">Menu</a>
+  </div>
+  <div>
+    <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-fp-2.webp" alt="Picture af matcha and kaffe" />
+    <h3>Opening Hours</h3>
+    <p>Monday - Thursday: 8:00 - 16:00 Friday: 8:00 - 17:00 Saturday – Sunday: 9:00 – 17:00</p>
+    <a class="btn" href="/community">lalalal</a>
+  </div>
+  <div>
+    <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-fp-3.webp" alt="Picture of grilled cheese" />
+    <h3>Contact</h3>
+    <p>Need allergen info, have a question, or want to book our space? We’d love to hear from you.</p>
+    <a class="btn" href="/contact">Contact</a>
+  </div>
+</section>
+
+<style>
+  h1 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #642d2d;
+  }
+
+  h2 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #642d2d;
+  }
+
+  h3 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #642d2d;
+    text-align: left;
+    padding-left: 50px;
+  }
+
+  img {
+    height: 628px;
+  }
+
+  img {
+    margin: 0 50px;
+    padding-bottom: 45px;
+  }
+
+  .fp-section-1 p {
+    text-align: left;
+    max-width: 35ch;
+    padding-left: 50px;
+    color: #642d2d;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+  }
+
+  .fp-section-1 {
+    margin: 100px 0;
+  }
+
+  @media screen and (min-width: 800px) {
+    .fp-section-1 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+      margin: 110px 50px 130px 50px;
+    }
+    .fp-section-1 p {
+      text-align: left;
+      max-width: 35ch;
+      color: #642d2d;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .fp-section-1 img {
+      width: 100%;
+      max-width: 400px;
+    }
+  }
+</style>

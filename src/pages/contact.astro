@@ -1,0 +1,96 @@
+
+---
+import MainLayout from "../layouts/MainLayout.astro"
+---
+
+	<body class="page">
+    <header class="bar"></header>
+
+    <main class="wrap">
+  <!--  -->
+    <section class="grid_section">
+
+    <div class="contact_tekst">  
+    <h1>CONTACT</h1>
+    <h3>CAFÉ ARABICA</h3>
+
+        <p>Blågårdsgade 12, 2200 København N</p>
+
+      <h4>Opening Hours</h4>
+      <p>
+        Monday – Thursday: 8:00 – 16:00<br>
+        Friday: 8:00 – 17:00<br>
+        Saturday – Sunday: 9:00 – 17:00
+      </p>
+
+      <p>
+        Kitchen closes mon–fri at 15:30<br>
+        sat–sun at 16:00
+      </p>
+
+      <h4>Booking</h4>
+      <p >
+        Write to us at the email below.
+      </p>
+
+      <p><strong>arabicacph@gmail.com</strong></p>
+      <p><strong>+45 88 75 43 28</strong></p>
+    </div>
+
+    <div class="contact_billede">
+      <img class="contact-img" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/contact-img.webp" alt="Cafe Arabica">
+    </div>
+
+  </section>
+  <!--  -->  
+
+  <header class="bar"></header>
+
+    <footer class="bar"></footer>
+  </main>
+  </body>
+
+</html>
+ <style>
+  :root{
+    --bg:#642D2D;
+    --fg:#F6F1E7;
+  }
+  .page{
+    background:var(--bg);
+    color:var(--fg);
+  }
+  /*Header/footer*/
+  .bar{
+    background:var(--bg);
+  }
+.grid_section{
+  padding: 50px 50px 0 50px;
+}
+.contact_tekst{
+  text-align: center; 
+}
+
+img{
+  display: flex;
+  padding: 10px 30px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Desktop */
+@media (min-width: 800px){
+.grid_section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+  gap: 250px;
+}
+.contact_tekst{
+  text-align: left;
+}
+}
+
+</style>
+
+ 

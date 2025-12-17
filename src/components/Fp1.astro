@@ -13,7 +13,7 @@ import Button from "../components/Button.astro";
   <div>
     <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-fp-2.webp" alt="Picture af matcha and kaffe" />
     <h3>Opening Hours</h3>
-    <p>Monday - Thursday: 8:00 - 16:00 Friday: 8:00 - 17:00 Saturday – Sunday: 9:00 – 17:00</p>
+    <p class="monday">Monday - Thursday: 8:00 - 16:00 Friday: 8:00 - 17:00 Saturday – Sunday: 9:00 – 17:00</p>
   </div>
   <div>
     <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/arabica-fp-3.webp" alt="Picture of grilled cheese" />
@@ -69,6 +69,10 @@ import Button from "../components/Button.astro";
 
   .fp-section-1 {
     margin: 100px 0;
+  }
+
+  .monday {
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 800px) {

@@ -4,92 +4,103 @@ import Footer2 from "../components/Footer2.astro";
 import "../styles/style.css";
 ---
 
-<Navigation2 />
-<body class="page">
-  <header class="bar"></header>
-
-  <main class="wrap">
-    <!--  -->
-    <section class="grid_section">
-      <div class="contact_tekst">
-        <h1>CONTACT</h1>
-        <h3>CAFÉ ARABICA</h3>
-
-        <p>Blågårdsgade 12, 2200 København N</p>
-
-        <h4>Opening Hours</h4>
-        <p>
-          Monday – Thursday: 8:00 – 16:00<br />
-          Friday: 8:00 – 17:00<br />
-          Saturday – Sunday: 9:00 – 17:00
-        </p>
-
-        <p>
-          Kitchen closes mon–fri at 15:30<br />
-          sat–sun at 16:00
-        </p>
-
-        <h4>Booking</h4>
-        <p>Write to us at the email below.</p>
-
-        <p><strong>arabicacph@gmail.com</strong></p>
-        <p><strong>+45 88 75 43 28</strong></p>
-      </div>
-
-      <div class="contact_billede">
-        <img class="contact-img" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/contact-img3.png" alt="Cafe Arabica" />
-      </div>
-    </section>
-    <!--  -->
-
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/imgs/logo.png" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <title>kkk</title>
+  </head>
+  <body class="page">
+    <Navigation2 />
     <header class="bar"></header>
 
-    <footer class="bar"></footer>
-  </main>
-</body>
+    <main class="wrap">
+      <!--  -->
+      <section class="grid_section">
+        <div class="contact_tekst">
+          <h1>CONTACT</h1>
+          <h3>CAFÉ ARABICA</h3>
 
-<Footer2 />
+          <p>Blågårdsgade 12, 2200 København N</p>
 
-<style>
-  main {
-    background-color: #642d2d;
-    color: #f6f1e7;
-    padding: 100px 0;
-  }
-  .page {
-    background: var(--bg);
-    color: var(--fg);
-  }
-  /*Header/footer*/
-  .bar {
-    background: var(--bg);
-  }
-  .grid_section {
-    padding: 50px 50px 0 50px;
-  }
-  .contact_tekst {
-    text-align: center;
-    margin-left: 200px;
-  }
+          <h4>Opening Hours</h4>
+          <p>
+            Monday – Thursday: 8:00 – 16:00<br />
+            Friday: 8:00 – 17:00<br />
+            Saturday – Sunday: 9:00 – 17:00
+          </p>
 
-  img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    height: 500px;
-  }
+          <p>
+            Kitchen closes mon–fri at 15:30<br />
+            sat–sun at 16:00
+          </p>
 
-  /* Desktop */
-  @media (min-width: 800px) {
+          <h4>Booking</h4>
+          <p>Write to us at the email below.</p>
+
+          <p><strong>arabicacph@gmail.com</strong></p>
+          <p><strong>+45 88 75 43 28</strong></p>
+        </div>
+
+        <div class="contact_billede">
+          <img class="contact-img" src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/contact-img3.png" alt="Cafe Arabica" />
+        </div>
+      </section>
+      <!--  -->
+
+      <header class="bar"></header>
+
+      <footer class="bar"></footer>
+    </main>
+    <Footer2 />
+  </body>
+
+  <style>
+    main {
+      background-color: #642d2d;
+      color: #f6f1e7;
+      padding: 100px 0;
+    }
+    .page {
+      background: var(--bg);
+      color: var(--fg);
+    }
+    /*Header/footer*/
+    .bar {
+      background: var(--bg);
+    }
     .grid_section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 250px;
-      align-items: center;
+      padding: 50px 50px 0 50px;
     }
     .contact_tekst {
-      text-align: left;
+      text-align: center;
+      margin-left: 200px;
     }
-  }
-</style>
+
+    img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 20px;
+      height: 500px;
+    }
+
+    /* Desktop */
+    @media (min-width: 800px) {
+      .grid_section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 250px;
+        align-items: center;
+      }
+      .contact_tekst {
+        text-align: left;
+      }
+    }
+  </style>
+</html>

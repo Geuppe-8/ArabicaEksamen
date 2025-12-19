@@ -1,0 +1,37 @@
+---
+const { data } = Astro.props;
+const slug = data?.slug;
+---
+
+<section class="sarah">
+  <h3>A place for the community</h3>
+
+  <p>Read how Arabica has been a part of local life for generations, told through a personal story from a long-time customer.</p>
+
+  <a class="pkg-link" href=`/pkg/${data.slug}`> Read here! </a>
+</section>
+
+<style>
+  a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #642d2d;
+    font-family: "DM SANS";
+    font-size: 1.1rem;
+  }
+
+  p {
+    max-width: 42ch;
+  }
+
+  section {
+    text-align: center;
+    margin: 30px 50px 0 50px;
+  }
+
+  @media screen and (min-width: 800px) {
+    p {
+      margin: 0 auto;
+    }
+  }
+</style>

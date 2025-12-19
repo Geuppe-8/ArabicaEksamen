@@ -1,0 +1,77 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import "../../styles/style.css";
+
+export async function getStaticPaths() {
+  const url = "https://wmlxmrpnovuojremqrzo.supabase.co/rest/v1/reviews";
+  const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndtbHhtcnBub3Z1b2pyZW1xcnpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU1MzY0NDQsImV4cCI6MjA4MTExMjQ0NH0.hUGXOAKUJiFqOUyB74tc9sM2ipLgBtbTQxB3yFMoZUA";
+  const options = {
+    headers: {
+      apikey: key,
+    },
+  };
+
+  const supaRequest = await fetch(url, options);
+  const supaData = await supaRequest.json();
+
+  return supaData.map((pkg) => {
+    return {
+      params: { slug: pkg.slug },
+      props: { pkg },
+    };
+  });
+}
+
+const { pkg } = Astro.props;
+---
+
+<MainLayout>
+  <section>
+    <div class="reviews">
+      <div>
+        <img src="https://wmlxmrpnovuojremqrzo.supabase.co/storage/v1/object/public/img/sarah.webp" alt="Billede af Sarah" />
+      </div>
+      <div>
+        <h2>{pkg.name}</h2>
+
+        <h3>{pkg.date}</h3>
+
+        <p>{pkg.text}</p>
+      </div>
+    </div>
+  </section>
+  <style>
+    section {
+      background-color: #f6f1e7;
+      color: #642d2d;
+      padding: 0 45px 70px 45px;
+    }
+    img {
+      margin: 30px 0;
+      border-radius: 30px;
+      width: 370px;
+    }
+
+    @media screen and (min-width: 800px) {
+      section {
+        padding: 100px 150px;
+        text-align: left;
+      }
+
+      section p {
+        max-width: 75ch;
+      }
+
+      .reviews {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      img {
+        margin-top: 40px;
+        border-radius: 30px;
+        width: 400px;
+      }
+    }
+  </style>
+</MainLayout>

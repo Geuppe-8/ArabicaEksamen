@@ -5,9 +5,11 @@ import Hero from "../components/Hero.astro";
 import Fp2 from "../components/Fp2.astro";
 import Fp3 from "../components/Fp3.astro";
 import Fp1 from "../components/Fp1.astro";
+import Reviews from "../components/Reviews.astro";
 import Frontpagetext from "../components/Frontpagetext.astro";
 const url = "https://wmlxmrpnovuojremqrzo.supabase.co/rest/v1/reviews";
 const key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndtbHhtcnBub3Z1b2pyZW1xcnpvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjU1MzY0NDQsImV4cCI6MjA4MTExMjQ0NH0.hUGXOAKUJiFqOUyB74tc9sM2ipLgBtbTQxB3yFMoZUA";
+
 const options = {
   headers: {
     apikey: key,
@@ -25,6 +27,11 @@ console.log("supaData", supaData);
   <Frontpagetext title="A MIDDLE EASTERN UNIVERSE" body="Enjoy the flavors of the Middle East just in the heart of Copenhagen. Come as you are. Stay for the community." />
   <Fp1 />
   <Frontpagetext title="OUR HOUSE" body="Our house is a cozy space made to make everyone feel at home. Warm colors and soft lighting create a place to relax and connect. Middle Eastern touches bring soul to every corner. Whether you come to work or study, grab a coffee to go, or spend time with friends and family, you’re always welcome." />
+  {
+    supaData.map((pkg) => {
+      return <Reviews data={pkg} />;
+    })
+  }
   <Fp2 />
   <Frontpagetext title="GET TO KNOW ARABICA" body="Follow us on Instagram for weekly posts of our food, community, and good vibes. We also share upcoming events with you" />
   <a class="instagram2" href="https://www.instagram.com/arabicacopenhagen/" target="_blank">Follow us on instagram!</a>
